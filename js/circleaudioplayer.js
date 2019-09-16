@@ -153,12 +153,12 @@ CircleAudioPlayer.prototype = {
 		this._ctx.stroke();
 
 		// play progress
-		if (progress > 0) {
-			this._ctx.beginPath();
-			this._ctx.arc(this._halfSize, this._halfSize, this._halfSize - (this.borderWidth / 2), arcOffset, arcOffset + doublePi * progress);
-			this._ctx.strokeStyle = this.playedColor;
-			this._ctx.stroke();
-		}
+		// if (progress > 0) {
+		// 	this._ctx.beginPath();
+		// 	this._ctx.arc(this._halfSize, this._halfSize, this._halfSize - (this.borderWidth / 2), arcOffset, arcOffset + doublePi * progress);
+		// 	this._ctx.strokeStyle = this.playedColor;
+		// 	this._ctx.stroke();
+		// }
 
 		// icons
 		this._ctx.fillStyle = this.iconColor;
@@ -268,7 +268,7 @@ CircleAudioPlayer.prototype = {
 	},
 	setAudio: function (audioUrl) {
 		this.audio = new Audio(audioUrl);
-		this._setState('loading');
+		// this._setState('loading');
 
 		this.audio.addEventListener('canplaythrough', (function () {
 			this._setState('paused');
