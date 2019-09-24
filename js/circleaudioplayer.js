@@ -298,7 +298,7 @@ CircleAudioPlayer.prototype = {
 
 // now init one as an example
 var cap = new CircleAudioPlayer({
-	audio: 'https://www.radioking.com/play/raiduya',
+	audio: 'http://ec2-52-206-21-200.compute-1.amazonaws.com/radio/8000/radio.mp3?1569195178',
   size: 120,
   borderWidth: 4
 });
